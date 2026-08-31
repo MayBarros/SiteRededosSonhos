@@ -1,0 +1,74 @@
+.quem-somos {
+  min-height: 100vh;
+  background-color: white;
+  color: #004080;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  position: relative;
+  text-align: center;
+}
+
+.quem-somos-logo {
+  width: 100px;
+  height: auto;
+  margin-bottom: 2rem;
+}
+
+.quem-somos-voltar {
+  position: absolute;
+  top: 1.5rem;
+  left: 1.5rem;
+  background-color: #004080;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.quem-somos h1 {
+  color: #1e3a8a;
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+}
+
+.quem-somos p {
+  color: #1e3a8a;
+  font-size: 2.0rem;
+  line-height: 1.8;
+  max-width: 700px;
+}
+
+.quem-somos {
+  min-height: 100vh;
+  padding: 2rem;
+  text-align: center;
+  background-image: url('../../assets/nuvemFundo.jpg'); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #fff; /* Torna o texto visível sobre o fundo */
+  position: relative;
+}
+
+.quem-somos-voltar {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background-color: #1e3a8a;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.quem-somos-logo {
+  width: 100px;
+  margin-top: 80px;
+}
+

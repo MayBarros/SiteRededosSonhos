@@ -1,0 +1,178 @@
+/* RESET E CORES AZUIS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary: #2563eb;
+  --primary-dark: #1e3a8a;
+  --primary-light: #dbeafe;
+  --bg-blue: #f0f7ff;
+  --card-bg: #ffffff;
+  --text-main: #1e293b;
+  --text-secondary: #475569;
+}
+
+body {
+  background: var(--bg-blue);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--text-main);
+}
+
+.dashboard {
+  display: grid;
+  grid-template-columns: 260px 1fr 300px;
+  gap: 24px;
+  padding: 20px;
+  height: 100vh;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+/* ================= FEED (Posts em cima, Publicação embaixo) ================= */
+.feed {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  gap: 20px;
+}
+
+/* Container de scroll para os sonhos */
+.posts-container {
+  flex: 1;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-right: 10px;
+}
+
+.posts-container::-webkit-scrollbar { width: 6px; }
+.posts-container::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 10px; }
+
+/* CARD DE POST MELHORADO */
+.post {
+  background: var(--card-bg);
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.08);
+  overflow: hidden; /* Garante que a imagem não escape das bordas */
+  border: 1px solid #e2e8f0;
+}
+
+.post-content {
+  padding: 24px;
+}
+
+.post-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.post-name {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--primary-dark);
+}
+
+.post-value-tag {
+  background: var(--primary);
+  color: white;
+  padding: 6px 14px;
+  border-radius: 99px;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+/* PROPORÇÃO DA IMAGEM */
+.post-image {
+  width: 100%;
+  max-height: 450px; /* Aumentado para melhor visualização */
+  object-fit: cover; /* Mantém a proporção sem achatar */
+  display: block;
+}
+
+.post-description {
+  font-size: 1.05rem;
+  line-height: 1.6; /* Melhor leitura */
+  color: var(--text-secondary);
+  margin-top: 16px;
+}
+
+/* ================= CRIAR POST (Embaixo) ================= */
+.create-post {
+  background: white;
+  padding: 24px;
+  border-radius: 16px;
+  box-shadow: 0 -4px 20px rgba(0,0,0,0.05);
+  border: 2px solid var(--primary-light);
+}
+
+.create-post textarea {
+  width: 100%;
+  min-height: 100px;
+  padding: 15px;
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+  background: #f8fafc;
+  font-size: 1rem;
+  margin: 12px 0;
+  resize: vertical;
+}
+
+/* PREVIEW NO FORM */
+.preview-wrapper {
+  position: relative;
+  margin-bottom: 15px;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 2px solid var(--primary-light);
+}
+
+.preview-img {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+}
+
+.btn-remove {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #ef4444;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* SIDEBAR E CHAT */
+.sidebar, .chat {
+  background: white;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+  border: 1px solid #e2e8f0;
+}
+
+.btn {
+  padding: 12px 20px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.2s;
+}
+
+.btn-primary {
+  background: var(--primary);
+  color: white;
+  width: 100%;
+}
+
+.btn-primary:hover { background: var(--primary-dark); }

@@ -1,0 +1,70 @@
+.como-funciona {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+
+  min-height: 100vh; /* Ocupa a altura total da tela */
+
+  /* Fundo com imagem */
+  background-image: url('../../assets/nuvemFundo.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  font-family: Arial, sans-serif;
+  position: relative; /* Para overlay funcionar */
+}
+
+/* Overlay semitransparente */
+.como-funciona::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.3);
+  z-index: 1;
+}
+
+/* Conteúdo acima do overlay */
+.como-funciona > * {
+  position: relative;
+  z-index: 2;
+}
+
+/* Botão voltar dentro do fundo */
+.como-funciona-voltar {
+  align-self: flex-start;
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  background-color: #1976d2;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.como-funciona-voltar:hover {
+  background-color: #125aa0;
+}
+
+.como-funciona h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center;
+}
+
+.texto-apresentacao {
+  max-width: 800px;
+  width: 100%;
+  text-align: justify;
+  padding: 20px;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #333;
+}

@@ -1,0 +1,544 @@
+
+/* =========================================
+   PÁGINA DO PERFIL
+========================================= */
+
+.perfil-page {
+  min-height: 100vh;
+  background: #f8fafc;
+  padding: 40px 20px;
+}
+
+
+/* =========================================
+   CONTAINER PRINCIPAL
+========================================= */
+
+.perfil-container {
+  max-width: 850px;
+  margin: 0 auto;
+
+  background: #ffffff;
+
+  border-radius: 18px;
+
+  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.08);
+
+  overflow: hidden;
+}
+
+
+/* =========================================
+   CABEÇALHO
+========================================= */
+
+.perfil-header {
+  display: flex;
+  align-items: center;
+
+  gap: 25px;
+
+  padding: 35px;
+
+  background: #eff6ff;
+
+  border-bottom: 1px solid #dbeafe;
+}
+
+
+/* =========================================
+   ÁREA DA FOTO
+========================================= */
+
+.perfil-photo-area {
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  gap: 10px;
+}
+
+
+/* FOTO */
+
+.perfil-photo {
+  width: 110px;
+  height: 110px;
+
+  object-fit: cover;
+
+  border-radius: 50%;
+
+  border: 4px solid #ffffff;
+
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.12);
+}
+
+
+/* AVATAR QUANDO NÃO TEM FOTO */
+
+.perfil-avatar {
+  width: 110px;
+  height: 110px;
+
+  border-radius: 50%;
+
+  background: #2563eb;
+
+  color: #ffffff;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  font-size: 2.8rem;
+
+  font-weight: bold;
+
+  border: 4px solid #ffffff;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================
+   BOTÃO ALTERAR FOTO
+========================================= */
+
+.alterar-foto {
+  padding: 7px 12px;
+
+  background: #ffffff;
+
+  color: #2563eb;
+
+  border-radius: 8px;
+
+  font-size: 0.85rem;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  border: 1px solid #dbeafe;
+
+  transition: 0.2s;
+}
+
+.alterar-foto:hover {
+  background: #dbeafe;
+}
+
+
+/* =========================================
+   INFORMAÇÕES DO CABEÇALHO
+========================================= */
+
+.perfil-header-info {
+  flex: 1;
+}
+
+.perfil-header-info h1 {
+  margin: 0;
+
+  color: #1e3a8a;
+
+  font-size: 1.9rem;
+}
+
+.perfil-status {
+  margin: 8px 0 0;
+
+  color: #64748b;
+
+  font-size: 1rem;
+
+  line-height: 1.5;
+
+  max-width: 550px;
+
+  word-break: break-word;
+}
+
+
+/* =========================================
+   CONTEÚDO
+========================================= */
+
+.perfil-content {
+  padding: 35px;
+}
+
+
+/* =========================================
+   TÍTULO + BOTÃO EDITAR
+========================================= */
+
+.perfil-title-area {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 20px;
+
+  margin-bottom: 30px;
+}
+
+.perfil-title-area h2 {
+  margin: 0;
+
+  color: #1e3a8a;
+
+  font-size: 1.5rem;
+}
+
+.perfil-title-area p {
+  margin: 5px 0 0;
+
+  color: #64748b;
+
+  font-size: 0.9rem;
+}
+
+
+/* =========================================
+   BOTÃO EDITAR PERFIL
+========================================= */
+
+.btn-editar {
+  border: none;
+
+  background: #2563eb;
+
+  color: #ffffff;
+
+  padding: 11px 18px;
+
+  border-radius: 8px;
+
+  font-size: 0.95rem;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.2s;
+
+  white-space: nowrap;
+}
+
+.btn-editar:hover {
+  background: #1d4ed8;
+
+  transform: translateY(-1px);
+}
+
+
+/* =========================================
+   SEÇÃO DE INFORMAÇÕES
+========================================= */
+
+.form-section {
+  margin-bottom: 30px;
+}
+
+.form-section h3 {
+  margin: 0 0 20px;
+
+  color: #1e3a8a;
+
+  font-size: 1.15rem;
+
+  padding-bottom: 10px;
+
+  border-bottom: 1px solid #e2e8f0;
+}
+
+
+/* =========================================
+   GRUPO DOS CAMPOS
+========================================= */
+
+.form-group {
+  margin-bottom: 22px;
+}
+
+.form-group label {
+  display: block;
+
+  margin-bottom: 7px;
+
+  color: #334155;
+
+  font-weight: 600;
+
+  font-size: 0.95rem;
+}
+
+
+/* =========================================
+   CAMPOS EDITÁVEIS
+========================================= */
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+
+  box-sizing: border-box;
+
+  padding: 13px 15px;
+
+  border: 1px solid #cbd5e1;
+
+  border-radius: 8px;
+
+  background: #ffffff;
+
+  color: #334155;
+
+  font-size: 1rem;
+
+  font-family: inherit;
+
+  outline: none;
+
+  transition: 0.2s;
+
+  resize: vertical;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #2563eb;
+
+  box-shadow:
+    0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+
+/* =========================================
+   DADOS NO MODO VISUALIZAÇÃO
+========================================= */
+
+.info-value {
+  width: 100%;
+
+  box-sizing: border-box;
+
+  padding: 13px 15px;
+
+  background: #f8fafc;
+
+  border: 1px solid #e2e8f0;
+
+  border-radius: 8px;
+
+  color: #334155;
+
+  min-height: 20px;
+
+  word-break: break-word;
+}
+
+
+/* STATUS */
+
+.status-value {
+  white-space: pre-wrap;
+
+  color: #475569;
+
+  line-height: 1.5;
+}
+
+
+/* =========================================
+   MENSAGEM DE SUCESSO / ERRO
+========================================= */
+
+.perfil-mensagem {
+  background: #ecfdf5;
+
+  color: #047857;
+
+  border: 1px solid #a7f3d0;
+
+  border-radius: 8px;
+
+  padding: 12px 15px;
+
+  margin-bottom: 20px;
+
+  font-size: 0.95rem;
+}
+
+
+/* =========================================
+   ÁREA DOS BOTÕES
+========================================= */
+
+.perfil-actions {
+  display: flex;
+
+  justify-content: flex-end;
+
+  gap: 12px;
+
+  padding-top: 20px;
+
+  border-top: 1px solid #e2e8f0;
+}
+
+
+/* =========================================
+   BOTÃO CANCELAR
+========================================= */
+
+.btn-cancelar {
+  border: none;
+
+  border-radius: 8px;
+
+  padding: 12px 20px;
+
+  background: #f1f5f9;
+
+  color: #475569;
+
+  font-size: 0.95rem;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.2s;
+}
+
+.btn-cancelar:hover {
+  background: #e2e8f0;
+}
+
+
+/* =========================================
+   BOTÃO SALVAR
+========================================= */
+
+.btn-salvar {
+  border: none;
+
+  border-radius: 8px;
+
+  padding: 12px 20px;
+
+  background: #2563eb;
+
+  color: #ffffff;
+
+  font-size: 0.95rem;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.2s;
+}
+
+.btn-salvar:hover {
+  background: #1d4ed8;
+
+  transform: translateY(-1px);
+}
+
+
+/* =========================================
+   BOTÃO VOLTAR
+========================================= */
+
+.btn-voltar {
+  margin-top: 25px;
+
+  padding: 10px 0;
+
+  border: none;
+
+  background: transparent;
+
+  color: #2563eb;
+
+  font-size: 0.95rem;
+
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+.btn-voltar:hover {
+  text-decoration: underline;
+}
+
+
+/* =========================================
+   RESPONSIVIDADE
+========================================= */
+
+@media (max-width: 650px) {
+
+  .perfil-page {
+    padding: 20px 10px;
+  }
+
+  .perfil-header {
+    flex-direction: column;
+
+    text-align: center;
+
+    padding: 25px 20px;
+  }
+
+  .perfil-header-info h1 {
+    font-size: 1.5rem;
+  }
+
+  .perfil-status {
+    max-width: 100%;
+  }
+
+  .perfil-content {
+    padding: 25px 20px;
+  }
+
+  .perfil-title-area {
+    flex-direction: column;
+
+    align-items: stretch;
+  }
+
+  .btn-editar {
+    width: 100%;
+  }
+
+  .perfil-actions {
+    flex-direction: column-reverse;
+  }
+
+  .btn-cancelar,
+  .btn-salvar {
+    width: 100%;
+  }
+
+  .perfil-photo,
+  .perfil-avatar {
+    width: 100px;
+    height: 100px;
+  }
+
+  .perfil-avatar {
+    font-size: 2.5rem;
+  }
+}
+
